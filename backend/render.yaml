@@ -3,6 +3,6 @@ services:
     name: user-management-backend
     env: python
     plan: free
-    startCommand: |
-      python backend/manage.py migrate &&
-      gunicorn backend.wsgi:application
+    buildCommand: |
+      python backend/manage.py migrate --noinput
+    startCommand: gunicorn backend.wsgi:application
