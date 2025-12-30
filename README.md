@@ -25,3 +25,13 @@
 ## Project Structure
 - backend/: Django backend service
 - backend/backend/: Django project settings and configuration
+
+## Live Backend API
+
+Base URL:
+https://user-management-system-jik1.onrender.com
+
+Example endpoints:
+- POST /auth/signup/
+- POST /auth/login/
+- GET /auth/me/
